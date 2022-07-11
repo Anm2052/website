@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | A & M PrintHouse</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.jpg" alt="logo" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- All Products -->
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default Sort</option>
+                <option>Sort By Price</option>
+                <option>Sort By Popularity</option>
+                <option>Sort By Rating</option>
+                <option>Sort By Sale</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+            <img src="images-/graphics design.jpg">
+                <h4>Graphic Designing</h4>
+            </div>
+            <div class="col-4">
+                <img src="images-/mugs.jpg">
+            </div>
+            <div class="col-4">
+                <img src="images-/Brochure design.webp">
+                <h4>Brochures Design & Print</h4>
+            </div>
+            <div class="col-4">
+                <img src="images-/flex print.jpg">
+                <h4>Flex Print</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images-/offset printing.jpg">
+                <h4>Offset Press Printing</h4>
+            </div>
+            <div class="col-4">
+                <img src="images-/lanyard.jpg">
+                <h4>Lanyard print</h4>
+            </div>
+            <div class="col-4">
+                <img src="images-/document-lamination-sample.jpg">
+                <h4>Lamination</h4>
+            </div>
+            <div class="col-4">
+                <img src="images-/stamp pad.jpg">
+                <h4>Self Ink Stamps</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images-/book printing.jpg">
+                <h4>Book Printing</h4>
+
+            </div>
+            <div class="col-4">
+                <img src="images-/Visiting Card.jpg">
+                <h4>ID/Visitng Card Design & Print </h4>
+ 
+            </div>
+            <div class="col-4">
+                <img src="images-/tshirt.jpg">
+                <h4>Red Printed T-Shirt</h4>
+            
+            </div>
+            <div class="col-4">
+                <img src="images-/book-binding.jpg">
+                <h4>Binding</h4>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Visit Our PrintHouse</h3>
+                    <a href="https://goo.gl/maps/nYbayqQaKh4zopLRA">We are Here</a>
+                    <p>Designed by <a href="https://www.aadarshajha.com.np/">Aadarsha Jha</a></p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.jpg">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and provides you the best quality print to your design.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="end">CopyRight By A & M Printhouse
+                <br> All Rights Reserved</p>
+        </div>
+    </div>
+
+    <!-- javascript -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px"
+            }
+            else {
+                MenuItems.style.maxHeight = "0px"
+            }
+        }
+    </script>
+
+</body>
+
+</html>
